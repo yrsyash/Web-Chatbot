@@ -1,0 +1,94 @@
+body
+{
+  background: url('../bck.jpg') no-repeat center center/cover;
+  
+}
+.fake_box
+{
+  background: url('');
+  width: 200px;
+  height: 200px;
+}
+
+.logo
+{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.container
+{
+     max-width: 955px;/*isse sam kuch center mein aaega */
+     /* background-color: red; */
+     margin-left: 440px;
+     height: 60vh;/*as per viewport height*/
+     padding-bottom: 5px; 
+    overflow-y:scroll;
+    
+}
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FFE249; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE249;
+    border-radius: 5px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.message
+{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    width: 25%;
+    margin: 20px 50px;
+    height: 8%;
+    padding-top: 12px;
+    text-align: center;
+    
+}
+.right
+{
+
+    float: right;
+    clear: both;
+}
+.left
+{
+    float: left;
+    clear: both;
+}
+#send-box
+{
+    margin: 5px 5px;
+    
+    text-align: center;
+}
+#message
+{
+  margin-left: 399px;
+    width: 900px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+}
+.btn
+{
+  
+    cursor: pointer;
+    width: 45px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: bisque;
+}

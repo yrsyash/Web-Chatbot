@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "vite-plugin-require": "^1.2.14"
+  }
+}
