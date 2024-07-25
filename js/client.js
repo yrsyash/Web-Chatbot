@@ -1,8 +1,7 @@
-const socket=require('socket.io');  
+const socket=io('http://localhost:8000')
 const form=document.getElementById("send-box");
 const messageInp=document.getElementById('message');
 const messagecontainer=document.querySelector(".container");
-var  audio=new Audio('pop.mp3');
 const append=(message,position)=>{
     const messageElement=document.createElement('div');
     messageElement.innerText=message;
@@ -14,7 +13,6 @@ const append=(message,position)=>{
     }
     
 }
-
 form.addEventListener('submit',(e)=>{
     e.preventDefault();//forbids page to reload
     const message=messageInp.value;
@@ -23,6 +21,9 @@ form.addEventListener('submit',(e)=>{
     messageInp.value=''; 
 
 })
+
+
+
 const nam=prompt("Enter your name to join the chat");
 socket.emit('new-user-joined', nam);
 
@@ -36,9 +37,4 @@ socket.on('receive',data=>{
 
 })
 
-socket.on('leave',data=>{
-    console.log("left");
-    append(`${data.nam}:left the chat` ,'left');
-
-})
 
